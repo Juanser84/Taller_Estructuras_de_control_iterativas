@@ -38,5 +38,10 @@ else:
             tanqueos_extra += 1 # Incremento del contador de tanqueos con octanaje alto
             
         galones = float(input()) # Lectura del siguiente registro de galones
+       
+# Cálculos estadísticos finales       
         
-        
+    promedio_viaje = total_km / total_galones # Cálculo del rendimiento promedio del viaje
+    porcentaje_extra = (tanqueos_extra / tanqueos_validos) * 100 # Cálculo del porcentaje de tanqueos con octanaje alto
+    
+    
