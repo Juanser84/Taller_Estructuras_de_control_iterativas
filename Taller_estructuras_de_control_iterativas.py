@@ -19,5 +19,24 @@ else:
         km = float(input()) # Lectura de kilómetros recorridos
         octanaje = int(input()) # Lectura del octanaje
         
+# Ciclo anidado para la validación del octanaje
+        
+        while octanaje < 81 or octanaje > 98: # Validación del octanaje
+            print("OCTANAJE INVALIDO") # Mensaje de error para octanaje inválido
+            octanaje = int(input()) # Lectura del octanaje nuevamente
+            
+        rendimiento_actual = km / galones # Cálculo del rendimiento actual
+        
+        if rendimiento_actual > mejor_rendimiento: # Verificación del mejor rendimiento histórico
+            mejor_rendimiento = rendimiento_actual # Actualización del mejor rendimiento
+            
+        total_galones += galones # Acumulación de galones
+        total_km += km # Acumulación de kilómetros
+        tanqueos_validos += 1 # Incremento del contador de tanqueos válidos
+        
+        if octanaje >= 90: # Verificación de gasolina de alto octanaje (Extra)
+            tanqueos_extra += 1 # Incremento del contador de tanqueos con octanaje alto
+            
+        galones = float(input()) # Lectura del siguiente registro de galones
         
         
