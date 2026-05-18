@@ -44,4 +44,12 @@ else:
     promedio_viaje = total_km / total_galones # Cálculo del rendimiento promedio del viaje
     porcentaje_extra = (tanqueos_extra / tanqueos_validos) * 100 # Cálculo del porcentaje de tanqueos con octanaje alto
     
+# Impresión de resultados con la precisión exigida (2 decimales)
+    
+    print(f"AVG: {promedio_viaje:.2f}") # Impresión del rendimiento promedio con 2 decimales
+    print(f"BEST: {mejor_rendimiento:.2f}") # Impresión del mejor rendimiento con 2 decimales
+    print(f"EXTRA: {porcentaje_extra:.2f}%") # Impresión del porcentaje de tanqueos con octanaje alto con 2 decimales y símbolo de porcentaje
+    
+# El programa finaliza después de imprimir los resultados estadísticos.
+
     
